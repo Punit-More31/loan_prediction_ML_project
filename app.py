@@ -6,9 +6,9 @@ import numpy as np
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
 
-# @app.route('/')
-# def home():
-#     return render_template("index.html")
+@app.route('/')
+def home():
+    return render_template("index.html")
 
 
 @app.route('/predict', methods=['GET', 'POST'])
