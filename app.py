@@ -91,12 +91,12 @@ def predict():
         # print(prediction)
 
         if(prediction=="N"):
-            prediction="No"
+            prediction="Aproved"
         else:
-            prediction="Yes"
+            prediction="Rejected"
 
 
-        return render_template("prediction.html", prediction_text="loan status is {}".format(prediction))
+        return render_template("prediction.html", prediction_text="loan status :{}".format(prediction))
 
 
 
