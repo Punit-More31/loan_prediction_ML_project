@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('model2.pkl', 'rb'))
 
 @app.route('/')
 def home():
@@ -91,9 +91,9 @@ def predict():
         # print(prediction)
 
         if(prediction=="N"):
-            prediction="Aproved"
-        else:
             prediction="Rejected"
+        else:
+            prediction="Approved"
 
 
         return render_template("prediction.html", prediction_text="loan status :{}".format(prediction))
