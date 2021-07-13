@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 app = Flask(__name__)
-model = pickle.load(open('model2.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/')
 def home():
@@ -96,7 +96,7 @@ def predict():
             prediction="Approved"
 
 
-        return render_template("prediction.html", prediction_text="loan status :{}".format(prediction))
+        return render_template("prediction.html", prediction_text="Estimated Loan Status :  {}".format(prediction))
 
 
 

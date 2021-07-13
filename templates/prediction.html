@@ -10,6 +10,11 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
     <title>prediction</title>
+    <style>
+      .predic{
+        font-size: 25px;
+      }
+    </style>
   </head>
   <body>
   <section class="text-gray-600 body-font">
@@ -18,12 +23,12 @@
       
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Loan prediction project</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">fill the form for prediction</p>
-      <br><br><h2><b>{{prediction_text}}</b></h2>
+      <br><br><div class="predic"><b>{{prediction_text}}</b></div></h2>
     </div>
     <div>
     
     </div>
-    <a class="btn btn-primary" href="./" role="button">Back</a>
+    <a class="btn btn-primary mb-3 " href="./" role="button">Back</a>
 <form action='/predict' method='POST'>
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label"> gender</label>
