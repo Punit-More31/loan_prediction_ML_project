@@ -1,0 +1,32 @@
+Project Installation Guidlines:
+
+NOTE: MAKE SURE YOU HAVE PYTHON 3.7 AND HIGHER VERSION.
+
+1. pip install virtalenv (execute this statement) in your local machine.
+
+2. Open the folder
+
+3. Shift + RightClick and select open with vs code or any code editor that you use.
+
+4. open the terminal.
+
+5. Execute the following statement
+
+6. pip install -r requirements.txt
+
+7. By now, if you have done everything right, every dependency woulh have been installed (don't turn off the terminal)
+
+8. Scripts\activate 
+
+9. And with step 8 you have entered your virtual environment.
+
+10. Finally you can run >>>   python app.py 
+
+11. This will start the python flask inbuilt server and give you a link to the flask app (web application).
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tailwind Installation:
+
+1. npm init -y
+2. npm install tailwindcss
+3. 
+
